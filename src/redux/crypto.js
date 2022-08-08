@@ -7,21 +7,26 @@ export const getCryptoAsync = createAsyncThunk(
       'https://api.coingecko.com/api/v3/coins',
     );
     const data = await response.json();
-    console.log(data);
     const data1 = data.map((element) => ({
       id: element.id,
       name: element.name,
       image: element.image.small,
-      currentPrice: element.market_data.current_price,
+      currentPrice: element.market_data.current_price.usd,
+      symbol: element.symbol,
     }));
-    console.log(data1);
     return data1;
   },
 );
 
 const cryptoSlice = createSlice({
   name: 'crypto',
-  initialstate: [{ id: 1, name: 'tinga', currentPrice: 32 }],
+  initialState: [],
+  reducers: {
+    addCrypto: (state) => {
+      const new1 = { id: 1, name: 'tinga', currentPrice: 32 };
+      return [...state, new1];
+    },
+  },
   extraReducers: {
     [getCryptoAsync.fulfilled]: (state, action) => action.payload,
   },
