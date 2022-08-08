@@ -32,7 +32,12 @@
 .top {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
+}
+
+.btn {
+  font-size: calc(1.3rem + 0.6vw);
 }
 
 .name {

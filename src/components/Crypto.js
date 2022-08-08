@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import styles from './cryptolist.module.css';
 
 function Crypto({
@@ -9,7 +10,7 @@ function Crypto({
     <li className={styles.listItem}>
       <div className={styles.top}>
         <p className={styles.name}>{name}</p>
-        <button type="button">Acha tu</button>
+        <BsFillArrowRightCircleFill className={styles.btn} />
       </div>
       <img className={styles.img} alt="crypto_img" src={image} />
       <div className={styles.bottom}>
