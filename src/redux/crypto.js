@@ -10,7 +10,7 @@ export const getCryptoAsync = createAsyncThunk(
     const data1 = data.map((element) => ({
       id: element.id,
       name: element.name,
-      image: element.image.small,
+      image: element.image.large,
       currentPrice: element.market_data.current_price.usd,
       symbol: element.symbol,
     }));

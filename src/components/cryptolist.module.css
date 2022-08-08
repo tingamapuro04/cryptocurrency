@@ -1,6 +1,6 @@
 .cryptolist {
-  width: 80%;
-  background: darkblue;
+  width: 100%;
+  background: #0b0e1c;
   color: white;
   margin-left: auto;
   margin-right: auto;
@@ -9,7 +9,7 @@
 .unordered {
   display: flex;
   flex-wrap: wrap;
-  gap: 3px;
+  gap: 20px;
 }
 
 .listItem {
@@ -32,6 +32,20 @@
 .top {
   display: flex;
   justify-content: space-around;
-  background: green;
   width: 100%;
+}
+
+.name {
+  font-family: 'Roboto Slab', serif;
+  font-size: calc(1.3rem + 0.6vw);
+  font-weight: 600;
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Roboto Slab', serif;
+  font-size: calc(1.3rem + 0.6vw);
+  font-weight: 600;
 }

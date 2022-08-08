@@ -8,13 +8,17 @@ function Crypto({
   return (
     <li className={styles.listItem}>
       <div className={styles.top}>
-        <p>{name}</p>
+        <p className={styles.name}>{name}</p>
         <button type="button">Acha tu</button>
       </div>
-      <img alt="crypto_img" src={image} />
+      <img className={styles.img} alt="crypto_img" src={image} />
       <div className={styles.bottom}>
         <p>{symbol}</p>
-        <p>{currentPrice}</p>
+        <p>
+          $
+          {currentPrice}
+          {' '}
+        </p>
       </div>
     </li>
   );
