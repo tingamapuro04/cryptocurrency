@@ -1,14 +1,20 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectSearchItem, setSearch } from '../redux/SearchStore';
 import styles from './cryptolist.module.css';
 
 function SearchBar() {
-  const formChange = () => {
+  const dispatch = useDispatch();
+  const searchTerm = useSelector(selectSearchItem);
+  const formChange = ({ target }) => {
+    const { value } = target;
+    dispatch(setSearch(value));
   };
 
   return (
     <div className={styles.Search}>
       <form>
-        <input type="text" placeholder="Search" onChange={formChange} />
+        <input value={searchTerm} type="text" placeholder="Search Coin" onChange={formChange} />
       </form>
     </div>
   );
