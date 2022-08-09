@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { filterCrypto } from '../redux/crypto';
+import { filterCrypto, getCryptoAsync } from '../redux/crypto';
 import styles from './cryptolist.module.css';
 
 function SearchBar() {
@@ -12,6 +12,11 @@ function SearchBar() {
     setValue({ ...value, name: e.target.value });
     dispatch(filterCrypto(value.name));
   };
+
+  useEffect(() => {
+    dispatch(getCryptoAsync());
+  }, [dispatch]);
+
   return (
     <div className={styles.Search}>
       <form>
