@@ -2,11 +2,13 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Crypto from './Crypto';
 import styles from './cryptolist.module.css';
+import SearchBar from './SearchBar';
 
 function CryptoList() {
   const data = useSelector((state) => state.cryptoData);
   return (
     <div className={styles.cryptolist}>
+      <SearchBar />
       <ul className={styles.unordered}>
         {data.map((item) => (
           <Crypto
