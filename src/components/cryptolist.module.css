@@ -54,3 +54,7 @@
   font-size: calc(1.3rem + 0.6vw);
   font-weight: 600;
 }
+
+.Search {
+  margin: 50px 30px;
+}

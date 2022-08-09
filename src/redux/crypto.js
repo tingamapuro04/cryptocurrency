@@ -26,10 +26,16 @@ const cryptoSlice = createSlice({
       const new1 = { id: 1, name: 'tinga', currentPrice: 32 };
       return [...state, new1];
     },
+    filterCrypto: (state, action) => {
+      const newState = [...state];
+      const ororo = newState.filter((item) => item.name.includes(action.payload));
+      return ororo;
+    },
   },
   extraReducers: {
     [getCryptoAsync.fulfilled]: (state, action) => action.payload,
   },
 });
 
+export const { filterCrypto } = cryptoSlice.actions;
 export default cryptoSlice.reducer;

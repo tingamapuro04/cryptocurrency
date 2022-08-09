@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { getCryptoAsync } from './redux/crypto';
 import './App.css';
 import CryptoList from './components/CryptoList';
+import SearchBar from './components/SearchBar';
 
 function App() {
   const dispatch = useDispatch();
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <div className="App">
+      <SearchBar />
       <CryptoList />
     </div>
   );
