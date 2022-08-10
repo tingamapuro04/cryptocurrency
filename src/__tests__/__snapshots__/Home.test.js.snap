@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+<div
+  className="headdiv"
+>
+  <img
+    alt="Head pic"
+    className="Headimage"
+    src="Trade.jpeg"
+  />
+</div>
+`;
