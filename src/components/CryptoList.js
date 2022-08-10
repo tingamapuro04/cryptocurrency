@@ -18,7 +18,7 @@ function CryptoList() {
     <div className={styles.cryptolist}>
       <Head />
       <SearchBar />
-      <div className={styles.unordered}>
+      <ul className={styles.unordered}>
         {data.map((item) => (
           <Link
             to={`/coin/${item.id}`}
@@ -49,7 +49,7 @@ function CryptoList() {
             </div> */}
           </Link>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }
