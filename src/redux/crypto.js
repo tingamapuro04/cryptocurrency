@@ -14,6 +14,9 @@ export const getCryptoAsync = createAsyncThunk(
       image: element.image.large,
       currentPrice: element.market_data.current_price.usd,
       symbol: element.symbol,
+      day: element.market_data.price_change_24h,
+      week: element.market_data.price_change_percentage_24h,
+      small: element.image.small,
     }));
     return data1;
   },

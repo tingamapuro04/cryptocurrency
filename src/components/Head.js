@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './cryptolist.module.css';
-import head from '../img/cryptoimg1.jpeg';
+import head from '../img/Trade.jpeg';
 
 function Head() {
   return (

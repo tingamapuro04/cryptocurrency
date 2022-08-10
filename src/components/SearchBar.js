@@ -14,7 +14,7 @@ function SearchBar() {
   return (
     <div className={styles.Search}>
       <form>
-        <input value={searchTerm} type="text" placeholder="Search Coin" onChange={formChange} />
+        <input className={styles.Input} value={searchTerm} type="text" placeholder="Search Coin" onChange={formChange} />
       </form>
     </div>
   );
