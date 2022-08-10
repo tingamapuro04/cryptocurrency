@@ -12,13 +12,10 @@
 - Redux
 - JavaScript
 
-## Live Demo 
-
-[Live Demo Link](https://mellifluous-gumdrop-3fb97a.netlify.app/)
 
 ## Live Presentation 
 
-[Live presentation Link](https://www.loom.com/share/b7b872ec95324be69aeddab98c2cee08)
+[Live presentation Link](https://www.loom.com/share/8952f4813c124b4586e6722b01568fc4)
 
 
 
