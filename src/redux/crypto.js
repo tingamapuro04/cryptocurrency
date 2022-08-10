@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { selectSearchItem } from './SearchStore';
 
 export const getCryptoAsync = createAsyncThunk(
   'crypto/getCryptoAsync',
@@ -21,21 +22,17 @@ export const getCryptoAsync = createAsyncThunk(
 const cryptoSlice = createSlice({
   name: 'crypto',
   initialState: [],
-  reducers: {
-    addCrypto: (state) => {
-      const new1 = { id: 1, name: 'tinga', currentPrice: 32 };
-      return [...state, new1];
-    },
-    filterCrypto: (state, action) => {
-      const newState = [...state];
-      const ororo = newState.filter((item) => item.name.includes(action.payload));
-      return ororo;
-    },
-  },
+  reducers: {},
   extraReducers: {
     [getCryptoAsync.fulfilled]: (state, action) => action.payload,
   },
 });
 
-export const { filterCrypto } = cryptoSlice.actions;
+export const selectedStockData = (state) => state.cryptoData;
+export const filteredCoins = (state) => {
+  const allCoins = selectedStockData(state);
+  const searchTerm = selectSearchItem(state);
+  return allCoins.filter((coin) => coin.name.toLowerCase().includes(searchTerm.toLowerCase()));
+};
+
 export default cryptoSlice.reducer;

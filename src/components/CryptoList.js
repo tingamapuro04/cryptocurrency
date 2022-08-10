@@ -1,11 +1,16 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getCryptoAsync, filteredCoins } from '../redux/crypto';
 import Crypto from './Crypto';
 import styles from './cryptolist.module.css';
 import SearchBar from './SearchBar';
 
 function CryptoList() {
-  const data = useSelector((state) => state.cryptoData);
+  const dispatch = useDispatch();
+  const data = useSelector(filteredCoins);
+  useEffect(() => {
+    dispatch(getCryptoAsync());
+  }, [dispatch]);
   return (
     <div className={styles.cryptolist}>
       <SearchBar />
