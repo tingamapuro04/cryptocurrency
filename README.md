@@ -15,6 +15,9 @@
 - Redux
 - JavaScript
 
+## Live Demo
+[Live Demo](https://timely-axolotl-af600d.netlify.app)
+
 
 ## Live Presentation 
 
