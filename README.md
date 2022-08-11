@@ -45,8 +45,8 @@ You need to install node js
 
 👤 **Alphonce Mobutu**
 
-- GitHub: [@Kimutai01](https://github.com/tingamapuro04)
-- LinkedIn: [@kiprotichkimutai](https://www.linkedin.com/in/adoyo-alphonce/)
+- GitHub: [@tingamapuro04](https://github.com/tingamapuro04)
+- LinkedIn: [@adoyo-alphonce](https://www.linkedin.com/in/adoyo-alphonce/)
 
 
 ## 🤝 Contributing
