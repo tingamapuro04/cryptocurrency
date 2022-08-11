@@ -32,21 +32,6 @@ function CryptoList() {
               currentPrice={item.currentPrice}
               key={item.id}
             />
-            {/* <div className={styles.solo}>
-              <div className={styles.top}>
-                <p className={styles.name}>{item.name}</p>
-                <BsFillArrowRightCircleFill className={styles.btn} />
-              </div>
-              <img className={styles.img} alt="crypto_img" src={item.image} />
-              <div className={styles.bottom}>
-                <p>{item.symbol}</p>
-                <p>
-                  $
-                  {item.currentPrice}
-                  {' '}
-                </p>
-              </div>
-            </div> */}
           </Link>
         ))}
       </ul>

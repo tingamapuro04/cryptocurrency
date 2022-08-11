@@ -1,5 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+## Preview
+![](./src/img/crypto.jpeg)
+
 # Crypto Market Data
 
 > A website that provides accurate data about various crypto currencies

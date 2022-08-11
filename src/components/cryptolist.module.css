@@ -4,20 +4,22 @@
 }
 
 .unordered {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 47% 47%;
+  gap: 0.4%;
+  padding: 2% 0 2% 3%;
+  text-align: justify;
 }
 
 .listItem {
-  width: 650px;
-  height: 320px;
+  height: 100%;
   padding-right: 0;
   list-style-type: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 0;
 }
 
 .listItem:nth-child(even) {
@@ -26,7 +28,7 @@
 
 .listItem:nth-child(odd) {
   background: linear-gradient(90deg, #1f264e 0, #2e4d75);
-  margin-left: 5.5%;
+  margin-right: 2%;
 }
 
 .top {
@@ -50,6 +52,7 @@
 a {
   color: white;
   text-decoration: none;
+  width: 100%;
 }
 
 a:focus {
@@ -60,9 +63,14 @@ a:focus {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   font-family: 'Roboto Slab', serif;
   font-size: calc(1.3rem + 0.6vw);
   font-weight: 600;
+}
+
+.img {
+  width: 30%;
 }
 
 .Search {
