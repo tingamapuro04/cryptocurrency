@@ -21,24 +21,24 @@ function Coin() {
           {' '}
         </button>
       </Link>
-      <table className={styles.table}>
-        <tr className={styles.row}>
-          <td><img alt="mobutu" src={coinData[index].small} /></td>
-          <td>{coinData[index].name}</td>
-        </tr>
-        <tr className={styles.row}>
-          <td>Current Price</td>
-          <td>{coinData[index].currentPrice}</td>
-        </tr>
-        <tr className={styles.row}>
-          <td>Price Change in 24hrs</td>
-          <td>{coinData[index].day}</td>
-        </tr>
-        <tr className={styles.row}>
-          <td>Price Change in a Week</td>
-          <td>{coinData[index].week}</td>
-        </tr>
-      </table>
+      <div className={styles.table}>
+        <div className={styles.row1}>
+          <img alt="mobutu" src={coinData[index].small} />
+          <p>{coinData[index].name}</p>
+        </div>
+        <div className={styles.row2}>
+          <p>Current Price</p>
+          <p>{coinData[index].currentPrice}</p>
+        </div>
+        <div className={styles.row1}>
+          <p>Price Change in 24hrs</p>
+          <p>{Math.trunc(coinData[index].day)}</p>
+        </div>
+        <div className={styles.row2}>
+          <p>Price Change in a Week</p>
+          <p>{coinData[index].week.toFixed(2)}</p>
+        </div>
+      </div>
     </div>
   );
 }

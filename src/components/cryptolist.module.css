@@ -1,6 +1,10 @@
 .cryptolist {
   background: #0b0e1c;
   color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow-y: hidden;
 }
 
 .unordered {
@@ -29,13 +33,15 @@
 .listItem:nth-child(odd) {
   background: linear-gradient(90deg, #1f264e 0, #2e4d75);
   margin-right: 1%;
-  margin-left: 20px;
+  margin-left: 2px;
 }
 
 .top {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
+  font-size: 1.3rem;
   width: 100%;
 }
 
@@ -45,7 +51,6 @@
 
 .name {
   font-family: 'Roboto Slab', serif;
-  font-size: calc(1.3rem + 0.6vw);
   font-weight: 600;
   text-decoration: none;
 }
@@ -87,27 +92,34 @@ a:focus {
   height: 300px;
 }
 
-.table {
-  margin-left: auto;
-  margin-right: auto;
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-top: 20px;
-  padding-bottom: 22%;
+.table:nth-child(odd) {
+  background: #2e3972c2;
 }
 
-.row {
+.row1 {
   width: 100%;
   display: flex;
-  justify-content: space-around;
-  font-size: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 120%;
   color: white;
+  padding: 20px 5px;
+}
+
+.row2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  font-size: 120%;
+  color: white;
+  padding: 20px 5px;
+  background: #2e3972c2;
 }
 
 .Coin {
   background: #1f264e;
+  height: 100vh;
 }
 
 .Go {

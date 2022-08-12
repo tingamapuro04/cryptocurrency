@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-// import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import { getCryptoAsync, filteredCoins } from '../redux/crypto';
 import Crypto from './Crypto';
 import styles from './cryptolist.module.css';

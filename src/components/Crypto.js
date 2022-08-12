@@ -9,7 +9,7 @@ function Crypto({
   return (
     <li className={styles.listItem}>
       <div className={styles.top}>
-        <p className={styles.name}>{name}</p>
+        <p className={styles.name}>{name.slice(0, 10)}</p>
         <BsFillArrowRightCircleFill className={styles.btn} />
       </div>
       <img className={styles.img} alt="crypto_img" src={image} />
@@ -17,7 +17,7 @@ function Crypto({
         <p>{symbol}</p>
         <p>
           $
-          {currentPrice}
+          {Math.round(currentPrice)}
           {' '}
         </p>
       </div>
