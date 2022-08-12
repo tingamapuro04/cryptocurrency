@@ -1,5 +1,5 @@
 .cryptolist {
-  background: #0b0e1c;
+  background: #0e4ea1;
   color: white;
   display: flex;
   flex-wrap: wrap;
@@ -11,7 +11,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 47% 47%;
-  gap: 0.4%;
+  gap: 0.2%;
   padding: 2% 0 2% 3%;
   text-align: justify;
 }
@@ -38,11 +38,12 @@
 
 .top {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   font-size: 1.3rem;
   width: 100%;
+  padding: 5px;
 }
 
 .btn {
@@ -68,11 +69,12 @@ a:focus {
 .bottom {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   font-family: 'Roboto Slab', serif;
   font-size: calc(1.3rem + 0.6vw);
   font-weight: 600;
+  padding: 5px;
 }
 
 .img {
@@ -93,7 +95,7 @@ a:focus {
 }
 
 .table:nth-child(odd) {
-  background: #2e3972c2;
+  background: #5066d6c2;
 }
 
 .row1 {
@@ -114,11 +116,11 @@ a:focus {
   font-size: 120%;
   color: white;
   padding: 20px 5px;
-  background: #2e3972c2;
+  background: #5367ccc2;
 }
 
 .Coin {
-  background: #1f264e;
+  background: #0e4ea1;
   height: 100vh;
 }
 
