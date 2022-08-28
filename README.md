@@ -16,7 +16,7 @@
 - JavaScript
 
 ## Live Demo
-[Live Demo](m-trading-app.netlify.app)
+[Live Demo](https://fancy-cassata-395be5.netlify.app)
 
 
 ## Live Presentation 
